@@ -1,0 +1,367 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Farmacia Fabio | Demo</title>
+    <meta
+      name="description"
+      content="Demo de vidriera digital y pedidos por WhatsApp para Farmacia Fabio."
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="#inicio" aria-label="Farmacia Fabio">
+        <img src="assets/logo-farmacia-fabio.png" alt="Logo Farmacia Fabio" />
+        <span>
+          <strong>Farmacia Fabio</strong>
+          <small>Cuidamos de vos</small>
+        </span>
+      </a>
+
+      <nav class="main-nav" aria-label="Principal">
+        <a href="#promos">Promos</a>
+        <a href="#categorias">Categorias</a>
+        <a href="#funciona">Como funciona</a>
+        <a href="#pedido">Pedido online</a>
+        <a href="#turnos">Turnos</a>
+        <a href="#contacto">Contacto</a>
+      </nav>
+
+      <a class="header-action" href="https://wa.me/5493487616473" target="_blank" rel="noreferrer">
+        WhatsApp
+      </a>
+    </header>
+
+    <main>
+      <section class="hero" id="inicio">
+        <div class="hero-copy">
+          <p class="eyebrow">Farmacia en Lima, Buenos Aires</p>
+          <h1>Tu farmacia de confianza, ahora tambien online.</h1>
+          <p class="hero-text">
+            Consulta promociones, horarios, turnos y arma tu pedido para enviarlo por
+            WhatsApp con retiro, envio, forma de pago y receta si hace falta.
+          </p>
+          <div class="hero-actions">
+            <a class="primary-button" href="#pedido">Hacer pedido</a>
+            <a class="secondary-button" href="#promos">Ver promociones</a>
+          </div>
+        </div>
+
+        <div class="hero-panel" aria-label="Resumen de servicios">
+          <div class="status-pill">Abierto hoy</div>
+          <h2>Calle 7 N 324 - Lima</h2>
+          <p>Atencion cercana, asesoramiento farmaceutico y productos para el cuidado diario.</p>
+          <div class="quick-grid">
+            <span>Obras sociales</span>
+            <span>Pedidos online</span>
+            <span>Perfumeria</span>
+            <span>Envios</span>
+          </div>
+        </div>
+      </section>
+
+      <section class="section intro-band" aria-label="Servicios principales">
+        <article>
+          <strong>Pedidos ordenados</strong>
+          <span>El cliente elige productos, cantidades, retiro o envio y envia todo por WhatsApp.</span>
+        </article>
+        <article>
+          <strong>Mas visibilidad</strong>
+          <span>Horarios, ubicacion, turnos, promociones, obras sociales y zonas de entrega.</span>
+        </article>
+        <article>
+          <strong>Identidad propia</strong>
+          <span>La web muestra una experiencia propia, clara y facil de explicar al cliente.</span>
+        </article>
+      </section>
+
+      <section class="section" id="promos">
+        <div class="section-heading">
+          <p class="eyebrow">Vidriera digital</p>
+          <h2>Promociones destacadas</h2>
+        </div>
+
+        <div class="catalog-tools">
+          <label class="search-box">
+            Buscar en el catalogo
+            <input id="productSearch" type="search" placeholder="Ej: protector, bebe, shampoo" />
+          </label>
+          <div class="cart-summary">
+            <span>Carrito demo</span>
+            <strong id="cartCount">0 productos</strong>
+            <a href="#pedido">Enviar pedido</a>
+          </div>
+        </div>
+
+        <div class="products-grid" id="products">
+          <article class="product-card" data-name="Protector solar FPS 50" data-category="Dermocosmetica">
+            <span class="tag">Dermocosmetica</span>
+            <div class="product-visual sunscreen"></div>
+            <h3>Protector solar FPS 50</h3>
+            <p>Cuidado diario para rostro y cuerpo.</p>
+            <strong>$ Consultar</strong>
+            <button type="button" class="add-button">Agregar</button>
+          </article>
+
+          <article class="product-card" data-name="Panal premium bebe" data-category="Bebe">
+            <span class="tag">Bebe</span>
+            <div class="product-visual baby"></div>
+            <h3>Panal premium bebe</h3>
+            <p>Linea bebe y cuidado familiar.</p>
+            <strong>Promo semanal</strong>
+            <button type="button" class="add-button">Agregar</button>
+          </article>
+
+          <article class="product-card" data-name="Shampoo cuidado capilar" data-category="Cuidado personal">
+            <span class="tag">Cuidado personal</span>
+            <div class="product-visual shampoo"></div>
+            <h3>Shampoo cuidado capilar</h3>
+            <p>Productos de higiene y perfumeria.</p>
+            <strong>2da unidad -20%</strong>
+            <button type="button" class="add-button">Agregar</button>
+          </article>
+
+          <article class="product-card" data-name="Crema hidratante facial" data-category="Dermocosmetica">
+            <span class="tag">Dermocosmetica</span>
+            <div class="product-visual cream"></div>
+            <h3>Crema hidratante facial</h3>
+            <p>Rutina diaria para piel sensible.</p>
+            <strong>$ Consultar</strong>
+            <button type="button" class="add-button">Agregar</button>
+          </article>
+
+          <article class="product-card" data-name="Vitamina C comprimidos" data-category="Farmacia">
+            <span class="tag">Farmacia</span>
+            <div class="product-visual vitamin"></div>
+            <h3>Vitamina C comprimidos</h3>
+            <p>Consulta disponibilidad y presentacion.</p>
+            <strong>Consultar stock</strong>
+            <button type="button" class="add-button">Agregar</button>
+          </article>
+
+          <article class="product-card" data-name="Toallitas humedas bebe" data-category="Bebe">
+            <span class="tag">Bebe</span>
+            <div class="product-visual wipes"></div>
+            <h3>Toallitas humedas bebe</h3>
+            <p>Producto destacado para cuidado familiar.</p>
+            <strong>Promo por pack</strong>
+            <button type="button" class="add-button">Agregar</button>
+          </article>
+        </div>
+
+        <p class="empty-state" id="emptyState">No encontramos productos con esa busqueda.</p>
+      </section>
+
+      <section class="section categories-section" id="categorias">
+        <div class="section-heading">
+          <p class="eyebrow">Catalogo simple</p>
+          <h2>Categorias para consultar</h2>
+        </div>
+
+        <div class="category-grid">
+          <a href="#pedido">Farmacia</a>
+          <a href="#pedido">Perfumeria</a>
+          <a href="#pedido">Bebe</a>
+          <a href="#pedido">Dermocosmetica</a>
+          <a href="#pedido">Cuidado personal</a>
+          <a href="#pedido">Obras sociales</a>
+        </div>
+      </section>
+
+      <section class="section steps-section" id="funciona">
+        <div class="section-heading">
+          <p class="eyebrow">Como funcionaria</p>
+          <h2>Una herramienta simple para vender y ordenar consultas</h2>
+        </div>
+
+        <div class="steps-grid">
+          <article>
+            <span>1</span>
+            <h3>El cliente entra</h3>
+            <p>Desde Instagram, Google o WhatsApp encuentra horarios, turnos y promociones.</p>
+          </article>
+          <article>
+            <span>2</span>
+            <h3>Busca productos</h3>
+            <p>Puede mirar categorias, usar el buscador o escribir una consulta puntual.</p>
+          </article>
+          <article>
+            <span>3</span>
+            <h3>La farmacia recibe</h3>
+            <p>El pedido llega con contacto, productos, retiro o envio, pago y datos de receta.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section capability-section">
+        <div class="section-heading">
+          <p class="eyebrow">Posibilidades del sistema</p>
+          <h2>Una base preparada para crecer por etapas</h2>
+        </div>
+
+        <div class="capability-grid">
+          <article>
+            <strong>Pedidos online</strong>
+            <span>Carrito, cantidades, comentarios y consulta directa por WhatsApp.</span>
+          </article>
+          <article>
+            <strong>Envios y retiros</strong>
+            <span>Direccion, localidad, horario preferido y retiro por mostrador.</span>
+          </article>
+          <article>
+            <strong>Recetas</strong>
+            <span>La web prepara el pedido y pide adjuntar la receta en WhatsApp.</span>
+          </article>
+          <article>
+            <strong>Promociones</strong>
+            <span>Productos destacados, combos, perfumeria y dermocosmetica.</span>
+          </article>
+          <article>
+            <strong>Obras sociales</strong>
+            <span>Consulta de cobertura, prepaga u obra social antes de confirmar.</span>
+          </article>
+          <article>
+            <strong>Panel interno</strong>
+            <span>Pedidos, promos, turnos, horarios y productos editables a futuro.</span>
+          </article>
+        </div>
+      </section>
+
+      <section class="section advice-section">
+        <div class="advice-card">
+          <div>
+            <p class="eyebrow">Consejo de tu farmaceutica</p>
+            <h2>Si tomas antibioticos, no suspendas antes de tiempo.</h2>
+            <p>
+              La web tambien puede reutilizar el contenido educativo de Instagram para
+              reforzar confianza y consultas responsables.
+            </p>
+          </div>
+          <img src="assets/instagram-referencia.png" alt="Publicaciones de referencia de Farmacia Fabio" />
+        </div>
+      </section>
+
+      <section class="section split-section" id="turnos">
+        <div>
+          <p class="eyebrow">Informacion util</p>
+          <h2>Turnos y horarios siempre visibles</h2>
+          <p>
+            Un espacio fijo para publicar turnos, horarios especiales, feriados y avisos
+            importantes sin que se pierdan entre publicaciones.
+          </p>
+        </div>
+        <div class="turn-card">
+          <strong>Turnos Agosto 2026</strong>
+          <ul>
+            <li>Sabado 1</li>
+            <li>Miercoles 5</li>
+            <li>Domingo 9</li>
+            <li>Jueves 13</li>
+            <li>Lunes 17</li>
+            <li>Viernes 21</li>
+            <li>Martes 25</li>
+            <li>Sabado 29</li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="section order-section" id="pedido">
+        <div class="section-heading">
+          <p class="eyebrow">Pedido online</p>
+          <h2>Arma tu pedido y envialo ordenado</h2>
+        </div>
+
+        <form class="order-box" id="orderForm">
+          <div class="order-grid">
+            <label>
+              Nombre
+              <input id="customerName" type="text" placeholder="Tu nombre" />
+            </label>
+            <label>
+              Telefono
+              <input id="customerPhone" type="tel" placeholder="Ej: 3487..." />
+            </label>
+          </div>
+
+          <div class="order-grid">
+            <label>
+              Entrega
+              <select id="deliveryMethod">
+                <option value="Retiro por farmacia">Retiro por farmacia</option>
+                <option value="Envio a domicilio">Envio a domicilio</option>
+              </select>
+            </label>
+            <label>
+              Medio de pago
+              <select id="paymentMethod">
+                <option value="Consultar">Consultar</option>
+                <option value="Efectivo">Efectivo</option>
+                <option value="Transferencia">Transferencia</option>
+                <option value="Link de pago">Link de pago</option>
+              </select>
+            </label>
+          </div>
+
+          <div class="order-grid">
+            <label>
+              Localidad / zona
+              <input id="deliveryZone" type="text" placeholder="Lima, Zarate, zona cercana" />
+            </label>
+            <label>
+              Direccion
+              <input id="deliveryAddress" type="text" placeholder="Solo si necesita envio" />
+            </label>
+          </div>
+
+          <div class="order-grid">
+            <label>
+              Obra social / prepaga
+              <input id="healthPlan" type="text" placeholder="Opcional" />
+            </label>
+            <label class="toggle-row public-toggle">
+              <input id="hasPrescription" type="checkbox" />
+              Tengo receta para adjuntar
+            </label>
+          </div>
+
+          <label>
+            Producto o consulta
+            <textarea id="customerMessage" rows="4" placeholder="Ej: Quiero consultar por protector solar FPS 50. Si corresponde, adjunto receta por WhatsApp."></textarea>
+          </label>
+          <div class="selected-box">
+            <span>Productos agregados</span>
+            <strong id="selectedProducts">Ninguno</strong>
+          </div>
+          <div class="order-preview" id="orderPreview"></div>
+          <button type="submit" class="primary-button">Enviar por WhatsApp</button>
+        </form>
+      </section>
+
+      <section class="section contact-section" id="contacto">
+        <div>
+          <p class="eyebrow">Contacto</p>
+          <h2>Farmacia Fabio</h2>
+          <p>Calle 7 N 324 - Lima, Buenos Aires</p>
+          <p>WhatsApp: +54 9 3487 61-6473</p>
+        </div>
+        <a
+          class="map-box"
+          href="https://www.google.com/maps/search/?api=1&query=Calle+7+324+Lima+Buenos+Aires"
+          target="_blank"
+          rel="noreferrer"
+        >
+          Ver ubicacion
+        </a>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <span>Demo comercial - Soluciones Digitales Personalizadas</span>
+      <a href="admin.html">Ver administracion demo</a>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>

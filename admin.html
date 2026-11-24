@@ -1,0 +1,129 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Administracion | Farmacia Fabio Demo</title>
+    <meta
+      name="description"
+      content="Demo de administracion simple para actualizar productos, promociones y turnos."
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="index.html" aria-label="Farmacia Fabio">
+        <img src="assets/logo-farmacia-fabio.png" alt="Logo Farmacia Fabio" />
+        <span>
+          <strong>Farmacia Fabio</strong>
+          <small>Panel interno demo</small>
+        </span>
+      </a>
+
+      <nav class="main-nav" aria-label="Principal">
+        <a href="index.html">Web publica</a>
+        <a href="#productos">Productos</a>
+        <a href="#turnos">Turnos</a>
+        <a href="#pedidos">Pedidos</a>
+      </nav>
+
+      <a class="header-action" href="index.html">Salir</a>
+    </header>
+
+    <main>
+      <section class="admin-hero">
+        <div>
+          <p class="eyebrow">Vista interna</p>
+          <h1>Administracion simple para mantener la web actualizada.</h1>
+          <p>
+            Esta pantalla muestra como la farmacia podria cargar productos, publicar
+            promociones, actualizar turnos y revisar pedidos sin depender de cambios manuales
+            en la pagina.
+          </p>
+        </div>
+      </section>
+
+      <section class="section admin-section" id="productos">
+        <div class="admin-shell">
+          <aside class="admin-menu" aria-label="Menu de administracion demo">
+            <strong>Panel Fabio</strong>
+            <span class="active">Productos</span>
+            <span>Promociones</span>
+            <span>Turnos</span>
+            <span>Horarios</span>
+            <span>Pedidos</span>
+          </aside>
+
+          <div class="admin-content">
+            <div class="admin-topbar">
+              <div>
+                <strong>Productos destacados</strong>
+                <small>Ejemplo de carga rapida para mantener la vidriera online.</small>
+              </div>
+              <button type="button">Publicar cambios</button>
+            </div>
+
+            <div class="admin-form-grid">
+              <label>
+                Producto
+                <input type="text" value="Protector solar FPS 50" />
+              </label>
+              <label>
+                Categoria
+                <input type="text" value="Dermocosmetica" />
+              </label>
+              <label>
+                Precio / promo
+                <input type="text" value="$ Consultar" />
+              </label>
+              <label class="toggle-row">
+                <input type="checkbox" checked />
+                Mostrar como promocion
+              </label>
+            </div>
+
+            <div class="admin-list">
+              <div><span>Crema hidratante facial</span><strong>Publicado</strong></div>
+              <div><span>Panal premium bebe</span><strong>Promo</strong></div>
+              <div><span>Shampoo cuidado capilar</span><strong>Publicado</strong></div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section dashboard-grid" id="turnos">
+        <article>
+          <span class="tag">Turnos</span>
+          <h2>Turnos del mes</h2>
+          <p>Actualizar fechas de turno y avisos importantes para que queden visibles.</p>
+          <div class="mini-calendar">
+            <span>1</span>
+            <span>5</span>
+            <span>9</span>
+            <span>13</span>
+            <span>17</span>
+            <span>21</span>
+            <span>25</span>
+            <span>29</span>
+          </div>
+        </article>
+
+        <article id="pedidos">
+          <span class="tag">Pedidos</span>
+          <h2>Consultas recibidas</h2>
+          <p>Vista ejemplo para ver pedidos que llegaron desde la web.</p>
+          <div class="request-list">
+            <div><strong>Maria</strong><span>Protector solar FPS 50</span></div>
+            <div><strong>Lucas</strong><span>Consulta por panales talle G</span></div>
+            <div><strong>Ana</strong><span>Disponibilidad de crema facial</span></div>
+          </div>
+        </article>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <span>Administracion demo - Farmacia Fabio</span>
+      <a href="index.html">Volver a la web publica</a>
+    </footer>
+  </body>
+</html>
